@@ -15,7 +15,7 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
   - DELETE é usado para deletar os dados de um funcionário. Ajuda a manter apenas os dados que realmente fazem sentido para a empresa. Um ex funcionnário desligado não deve estar no BD de uma empresa.
 
 * Consultando com condicionais
-  - No arquivo "condicional", foi feita a consulta de dados para análises utilizando condicionais como:
+  - No arquivo "condicional."", foram feitas consultas de dados para análises utilizando condicionais como:
   - WHERE, para definir qual critério o registro deve antender.
   - IN, para definir um período de dados em determinada coluna.
   - AND e OR, para definir mais de um critério, podendo selecionar dois ou mais, no caso de AND, ou um ou outro, no caso de OR.
@@ -24,3 +24,15 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
   - BETWEEN, para definir um intervalo entre um número e outro.
   - IS NULL, para selecionar o que for nulo.
   - CASE, para criar uma endentação e utilizar condicionais para definir novas classificações para determinados dados.
+ 
+* Consultando com agregações
+  - No arquivo "agregação.sql", foram feitas consultas de dados para análises utilizando funções de agragação como:
+  - COUNT, para contar uma quantidade de registros.
+  - DISTINCT, para selecionar apenas valores únicos.
+  - AVG, para calcular a média de uma coluna numérica.
+  - MIN, para selecionar o menor valor de uma coluna.
+  - MAX, para selecionar o maior valor de uma coluna.
+  - DENSE_RANK, para rankear registros únicos em posições crescentes.
+  - ROUND, para  arredondar o valor de uma média.
+  - GROUP BY, para agrupar dados conforme uma coluna.
+  - HAVING, para estabelecer uma condicional na consulta de dados. Diferente do WHERE, deve ser usado depois da estrutura.
