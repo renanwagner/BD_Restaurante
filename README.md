@@ -9,13 +9,13 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
 * Caso queira ver a estrutura da tabela, utilize o comando DESC nome_da_tabela. Isso mostrará todos os dados e suas características.
 
 * Manipulando dados
-  - No arquivo "manipulação.sql" é possível ver os dados inseridos em cada tabela.
+  - No arquivo "manipulação" é possível ver os dados inseridos em cada tabela.
   - SELECT é usado para maior controle visual das tabelas, ajudando na integridade dos dados ao inserir a quantidade e a característica correta.
   - UPDATE é usado para atualizar dados cadastrais de um funcionário, o que é constantemente exigido, devido a necessidade de mantermos os dados atualizados.
   - DELETE é usado para deletar os dados de um funcionário. Ajuda a manter apenas os dados que realmente fazem sentido para a empresa. Um ex funcionnário desligado não deve estar no BD de uma empresa.
 
 * Consultando com condicionais
-  - No arquivo "condicional."", foram feitas consultas de dados para análises utilizando condicionais como:
+  - No arquivo "condicional" foram feitas consultas de dados para análises utilizando condicionais como:
   - WHERE, para definir qual critério o registro deve antender.
   - IN, para definir um período de dados em determinada coluna.
   - AND e OR, para definir mais de um critério, podendo selecionar dois ou mais, no caso de AND, ou um ou outro, no caso de OR.
@@ -26,7 +26,7 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
   - CASE, para criar uma endentação e utilizar condicionais para definir novas classificações para determinados dados.
  
 * Consultando com agregações
-  - No arquivo "agregação.sql", foram feitas consultas de dados para análises utilizando funções de agragação como:
+  - No arquivo "agregação" foram feitas consultas de dados para análises utilizando funções de agragação como:
   - COUNT, para contar uma quantidade de registros.
   - DISTINCT, para selecionar apenas valores únicos.
   - AVG, para calcular a média de uma coluna numérica.
@@ -36,3 +36,10 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
   - ROUND, para  arredondar o valor de uma média.
   - GROUP BY, para agrupar dados conforme uma coluna.
   - HAVING, para estabelecer uma condicional na consulta de dados. Diferente do WHERE, deve ser usado depois da estrutura.
+ 
+* Como funcionam as múltiplas tabelas?
+  - No arquivo "múltiplas_tabelas" foram feitas consultas complexas utilizando duas ou mais tabelas através das seguintes ferramentas:
+  - ALIAS, uma forma de abreviar a variável (coluna) para otimizar a visualização da query
+  - PRIMARY KEY e FOREIGN KEY, através das ligações estabelecidas no arquivo "manipulação"
+  - INNER JOIN, para criar uma ligação entre os dados em comum das tabelas, definidos pelas chaves
+  - Além disso, comandos de condição e agregação foram utilizados para aumentar a complexidade e exatidão das consultas, como, por exemplo, WHERE e GROUP BY, que possibilitam uma visão clara e objetiva dos clientes com pedidos pendentes.
