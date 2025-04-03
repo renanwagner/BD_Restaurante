@@ -43,3 +43,10 @@ Um BD de um restaurante que conecta os dados da coluna de uma tabela através de
   - PRIMARY KEY e FOREIGN KEY, através das ligações estabelecidas no arquivo "manipulação"
   - INNER JOIN, para criar uma ligação entre os dados em comum das tabelas, definidos pelas chaves
   - Além disso, comandos de condição e agregação foram utilizados para aumentar a complexidade e exatidão das consultas, como, por exemplo, WHERE e GROUP BY, que possibilitam uma visão clara e objetiva dos clientes com pedidos pendentes.
+ 
+* Como funcionam as consultas avançadas?
+  - No arquivo "consultas_avançadas" form feitas consultas complexas utilizando a criação de visualizações e funções automatizadas como:
+  - VIEW, que cria uma "tabela" separada conforme as condições inseridas no código. É útil para separar informações necessárias e otimizar consultas.
+  - FUNCTION, que cria uma função que armazena o código inserido. Podem se fazer joins, consultas agregadas ou com operadores. Para executar a função, utiliza-se o SELECT e número do identificador usado como argumento.
+  - DELIMITER, muda o delimitador temporariamente para, nesse caso, "//", permitindo que o ";" possa ser usado dentro da função sem que o código seja encerrado. Após o fim da função, é importante mudar novamente o delimitador.
+  - REPLACE, é utilizado para atualizar uma view já existente sem a necessidade de criá-la novamente. Para atualizar, é apenas inserior o comando o escrever o código novamente com a alteração desejada.
